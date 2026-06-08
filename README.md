@@ -66,6 +66,15 @@ SQLには以下が含まれています。
 npm run build
 ```
 
+## Vercelにデプロイする場合
+
+Viteの環境変数はビルド時に埋め込まれます。Vercelでは、デプロイ前に Project Settings > Environment Variables で以下を設定してください。
+
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_ANON_KEY`
+
+設定対象のEnvironmentは、公開URLがProductionなら `Production`、プレビューURLなら `Preview` にもチェックを入れます。設定後は既存デプロイには反映されないため、必ずRedeployしてください。
+
 ## 画面
 
 - `/login`: ログイン
