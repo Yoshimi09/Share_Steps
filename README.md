@@ -41,7 +41,11 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 1. Supabaseで新規プロジェクトを作成します。
 2. Project Settings > API から `Project URL` と `anon public` key を確認し、`.env` に設定します。
 3. Supabase Dashboard の SQL Editor を開きます。
-4. `supabase/schema.sql` の内容を貼り付けて実行します。
+4. 以下のSQLファイルを番号順に貼り付けて実行します。各ファイルは100行未満です。
+   - `supabase/01_tables.sql`
+   - `supabase/02_functions.sql`
+   - `supabase/03_rls_policies.sql`
+   - `supabase/04_indexes.sql`
 5. Authentication > Providers で Email が有効になっていることを確認します。
 
 SQLには以下が含まれています。
